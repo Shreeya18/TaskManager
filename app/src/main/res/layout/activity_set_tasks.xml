@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aboli"
+    tools:context=".SetTasks">
+
+
+    <EditText
+        android:id="@+id/add_task"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/tasks_list_view"
+        android:fontFamily="@font/adamina"
+        android:hint="add"
+        android:padding="14sp"
+        android:textColorHint="@color/black"
+        android:textSize="22sp" />
+
+
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btns"
+        android:text="Done"
+        android:fontFamily="@font/adamina"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_below="@id/add_task"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="7dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/done_btn"
+        android:layout_marginTop="55dp" />
+
+
+</RelativeLayout>
